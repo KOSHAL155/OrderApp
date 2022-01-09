@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+    <style name="CustomeText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#F32168</item>
+        <item name="android:textStyle">italic</item>
+
+    </style>
+</resources>

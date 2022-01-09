@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/nameC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="Customer Name" />
+        <EditText
+            android:id="@+id/p_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Phone Number" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/CustomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+
+            android:padding="10dp"
+            android:text="Quantity"
+            android:textAllCaps="true"
+            />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/inc"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="+"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="increment"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/inc"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/dec"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/quantity"
+            android:onClick="decrement"
+            android:text="-" />
+    </RelativeLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/check12"
+            android:layout_height="wrap_content"
+            android:onClick="check1"
+            android:textSize="16sp"
+            android:text=" Extra Topping for 10$"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp"
+            style="@style/CustomeText"
+            android:layout_marginTop="16dp"></CheckBox>
+
+
+
+            <CheckBox
+                android:id="@+id/check21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="check2"
+                android:textSize="16sp"
+                style="@style/CustomeText"
+                android:textAllCaps="true"
+                android:layout_marginTop="16dp"
+                android:text=" Extra Topping for 20$"></CheckBox>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/orderSummary"
+            style="@style/CustomeText"
+            android:textSize="24dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/price_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Price"
+            style="@style/CustomeText"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            style="@style/CustomeText"
+            android:text="$0"/>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Order"
+            android:onClick="submitOrder"/>
+
+        <TextView
+            android:id="@+id/thanku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/CustomeText"
+            android:textSize="24sp" />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
